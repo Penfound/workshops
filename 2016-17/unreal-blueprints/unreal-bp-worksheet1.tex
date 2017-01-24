@@ -15,41 +15,56 @@
 
 \maketitle 
 
-\marginpicture{flavour_pic}{
-    \emph{Unreal Engine} something about Unreal
-}
-
 \begin{marginquote}
 `We find you need to make a game wrong at least two or three times before you find the right path. ...
 We took a lot of opportunity to design and explore, knowing that a lot of it would be thrown away.''
 \par --- Ken Wong, lead designer \textbf{Monument Valley}
 \end{marginquote}
 
+\marginpicture{flavour_pic}{
+    \emph{Unreal Engine} Blueprints
+}
+
 \section*{Introduction}
 The goals of this series of workshops is to obtain a good working knowledge of Visual Scripting system in Unreal which is called Blueprints. This will enable you to not only create simple systems in a game (e.g. Triggers) but create full games.
 
-Explanation text
+Blueprints is the Visual Scripting language which is shipped inside Unreal Engine 4. This language is node based, where functions and variables can be represented as nodes on the graph and the relationship between these are defined by connections. These connections also allow you to easily see the flow of data through your code. 
 
-Objectives
-%\begin{enumerate}[label=(\Alph*)]
-%	\item \textbf{Apply} basic computational thinking to puzzle solving;
-%	\item \textbf{Express} simple algorithms using notations such as flowcharts and pseudocode;
-%	\item \textbf{Utilise} theoretical concepts such as computational complexity;
-%	\item \textbf{Implement} programs making use of advanced data structures;
-%	\item \textbf{Understand} how compilers and interpreters translate program source code into an executable form.
-%\end{enumerate}
+\section*{Objectives}
+\begin{enumerate}[label=(\Alph*)]
+	\item \textbf{Understand} the architecture of the Unreal Engine
+	\item \textbf{Understand} the syntax of the Blueprints visual scripting system
+	\item \textbf{Apply} your knowledge of the Unreal Engine to modify existing systems
+	\item \textbf{Implement} changes to existing Blueprints to add functionality
+\end{enumerate}
 
-%For each worksheet you must:
-%\begin{enumerate}[label=(\roman*)]
-%    \item \textbf{Read} the instructions in the worksheet;
-%    \item \textbf{Complete} all of the problems presented in the worksheet;
-%    \item \textbf{Bring} your solution to class on the date specified on the worksheet,
-%    	where it will be marked.
-%\end{enumerate}
+\section*{Worksheet Setup}
 
-\subsection*{Worksheet Setup}
+In order to complete this workshop we are going to modify the Blueprints FPS Template. This will provide us with some base functionality including 
 
-Blahh stuff
+\begin{itemize}
+	\item Basic blocked out environment
+	\item First Person Camera Controls
+	\item Weapon with projectiles
+\end{itemize}
+
+We will then build on this template in the workshops to develop a more fully featured FPS.
+
+\section*{Worksheet Tasks}
+
+\begin{enumerate}
+	\item Split into groups of 5 and each group member research the following and then report back to  the team with your findings
+	\begin{enumerate}[label=(\Alph*)]
+		\item \textbf{Game Modes, Game States \& Player State} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/GameMode/index.html}
+		\item \textbf{Actor \& Actor Components} - \url{https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/}
+		\item \textbf{Pawn \& Character} - url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/}
+		\item \textbf{Controllers} - url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/}
+	\end{enumerate}
+	\item Split into Pairs (or Mobs) and create a Blueprints FPS Game in Unreal and carry out the following tasks
+		\begin{enumerate}[label=(\Alph*)]
+		\item \textbf{Stop the bullet falling due to gravity}
+		\end{enumerate}
+\end{enumerate}
 
 \section*{Additional Guidance}
 
