@@ -13,7 +13,7 @@
 
 \begin{document}
 
-\maketitle 
+\maketitle
 
 \begin{marginquote}
 `We find you need to make a game wrong at least two or three times before you find the right path. ...
@@ -28,48 +28,51 @@ We took a lot of opportunity to design and explore, knowing that a lot of it wou
 \section*{Introduction}
 The goals of this series of workshops is to obtain a good working knowledge of Visual Scripting system in Unreal which is called Blueprints. This will enable you to not only create simple systems in a game (e.g. Triggers) but create full games.
 
-Blueprints is the Visual Scripting language which is shipped inside Unreal Engine 4. This language is node based, where functions and variables can be represented as nodes on the graph and the relationship between these are defined by connections. These connections also allow you to easily see the flow of data through your code. 
+Blueprints is the Visual Scripting language which is shipped inside Unreal Engine 4. This language is node based, where functions and variables can be represented as nodes on the graph and the relationship between these are defined by connections. These connections also allow you to easily see the flow of data through your code.
 
 \section*{Objectives}
 \begin{enumerate}[label=(\Alph*)]
-	\item \textbf{Understand} The Gameplay architecture of the Unreal Engine 
+	\item \textbf{Understand} rhe Gameplay architecture of the Unreal Engine
 	\item \textbf{Understand} the syntax of the Blueprints visual scripting system
 	\item \textbf{Implement} Unreal Actors using Blueprints
+  \item \textbf{Understand} the basics of the collision system in Unreal
+  \item \textbf{Understand} how to debug Unreal Blueprints.
 \end{enumerate}
 
 \section*{Worksheet Setup}
 
-This is a continuation of worksheet 1, you should add functionality onto the project from worksheet 1.
-
+This is a continuation of worksheet 1, you should add functionality into the project from worksheet 1.
 
 \section*{Worksheet Tasks}
 
 \begin{enumerate}
-	\item As individuals read the following documentation
-%	\begin{enumerate}[label=(\Alph*)]
-%		\item \textbf{Game Modes, Game States \& Player State} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/GameMode/index.html}
-%		\item \textbf{Actor \& Actor Components} - \url{https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/}
-%		\item \textbf{Pawn \& Character} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/}
-%		\item \textbf{Controllers} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/} 
-%	\end{enumerate}
-%	\item Split into Pairs (or Mobs), ideally with someone who is familiar with Unreal. Create a Blueprints FPS Game in Unreal and carry out the following tasks
-%		\begin{enumerate}[label=(\Alph*)]
-%		\item \textbf{Stop} the bullet falling due to gravity
-%		\item \textbf{Increase} the initial speed of the bullet
-%		\item \textbf{Add} a variable to the projectile blueprint to replace 100 which multiplies the velocity, you should make sure that this variable is editable
-%		\item \textbf{Destroy} the bullet regardless of what object is hit
-%		\end{enumerate}
+	\item As individuals follow these tutorial videos, you can add the content of these to the existing map or a new one
+  	\begin{enumerate}[label=(\Alph*)]
+      \item \textbf{Introduction to Blueprints} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/EFXMW_UEDco/index.html}
+      \item \textbf{Introduction to Level Blueprints} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/_zoyaVdqHQ8/index.html}
+      \item \textbf{Toggle a light} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/gHdwOiR0D0A/index.html}
+      \item \textbf{Class Blueprints} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/5YooEu-ktww/index.html}
+      \item \textbf{Components and Blueprints} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/5YooEu-ktww/index.html}
+      \item \textbf{Blueprint Functionality} - \url{https://docs.unrealengine.com/latest/INT/Videos/PLZlv_N0_O1gY35ezlSQn1sWOGfh4C7ewO/9nMnQE-Zg-o/index.html}
+    \end{enumerate}
+\item Split into Pairs (or Mobs), ideally with someone who is familiar with Unreal. Carry out the following tasks
+		\begin{enumerate}[label=(\Alph*)]
+		\item An Actor which acts like a pickup and \textbf{disapears} when collided with by the player
+		\item An Actor which gets \textbf{destoryed} when hit by a bullet
+    \item An Actor which acts like a \textbf{launchpad} when the player steps on it
+    \item An Actor which \textbf{follows} the player and is destoryed when it collides with the player
+		\end{enumerate}
 \end{enumerate}
 
 \section*{Additional Guidance}
-
+When you are coding it might be difficult to figure out the state of the application, it is often a good idea to set a break point or use Print String function.
 
 
 \section*{Additional Resources}
 
-%\begin{itemize}
-%    \item Keith, C. (2010) Agile Game Development with Scrum. Pearson Education.
-%    \item http://agilemanifesto.org/
-%\end{itemize}
+\begin{itemize}
+  \item Introduction to Blueprints in Unreal \url{https://www.pluralsight.com/courses/introduction-blueprint-unreal-engine-1688}
+  \item Creating Gameplay Systems in Unreal \url{https://www.pluralsight.com/courses/gameplay-systems-blueprint-features-unreal-engine-1861}
+\end{itemize}
 
 \end{document}
