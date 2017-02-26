@@ -1,0 +1,88 @@
+\documentclass{../../../fal_assignment}
+\graphicspath{ {../../../} }
+
+\usepackage{enumitem}
+\setlist{nosep} % Make enumerate / itemize lists more closely spaced
+\usepackage[T1]{fontenc} % http://tex.stackexchange.com/a/17858
+\usepackage{url}
+\usepackage{todonotes}
+
+\title{Worksheet Tasks}
+\author{Alcwyn Parker} %based on Dr Ed Powley's COMP110 Worksheets
+\module{Arduino}
+
+\begin{document}
+
+\maketitle
+
+\begin{marginquote}
+`We find you need to make a game wrong at least two or three times before you find the right path. ...
+We took a lot of opportunity to design and explore, knowing that a lot of it would be thrown away.''
+\par --- Ken Wong, lead designer \textbf{Monument Valley}
+\end{marginquote}
+
+\marginpicture{flavour_pic}{
+    \emph{Unreal Engine} Blueprints
+}
+
+\section*{Introduction}
+The goals of this series of workshops is to obtain a good working knowledge of Visual Scripting system in Unreal which is called Blueprints. This will enable you to not only create simple systems in a game (e.g. Triggers) but create full games.
+
+Blueprints is the Visual Scripting language which is shipped inside Unreal Engine 4. This language is node based, where functions and variables can be represented as nodes on the graph and the relationship between these are defined by connections. These connections also allow you to easily see the flow of data through your code.
+
+\section*{Objectives}
+\begin{enumerate}[label=(\Alph*)]
+	\item \textbf{Understand} the architecture of the Unreal Engine
+	\item \textbf{Understand} the syntax of the Blueprints visual scripting system
+	\item \textbf{Apply} your knowledge of the Unreal Engine to modify existing systems
+	\item \textbf{Implement} changes to existing Blueprints to add functionality
+\end{enumerate}
+
+\section*{Worksheet Setup}
+
+In order to complete this workshop we are going to modify the Blueprints FPS Template. This will provide us with some base functionality including
+
+\begin{itemize}
+	\item Basic blocked out environment
+	\item First Person Camera Controls
+	\item Weapon with projectiles
+\end{itemize}
+
+We will then build on this template in the workshops to develop a more fully featured FPS.
+
+\section*{Worksheet Tasks}
+
+\begin{enumerate}
+	\item Split into Pairs (or Mobs), ideally with someone who is familiar with Unreal. Create a Blueprints FPS Game in Unreal and carry out the following tasks
+		\begin{enumerate}[label=(\Alph*)]
+		\item \textbf{Stop} the bullet falling due to gravity
+		\item \textbf{Increase} the initial speed of the bullet
+		\item \textbf{Add} a variable to the projectile blueprint to replace 100 which multiplies the velocity, you should make sure that this variable is editable
+		\item \textbf{Destroy} the bullet regardless of what object is hit
+		\end{enumerate}
+	\item Split into groups of 5 and each group member research the following and then report back to the team with your findings
+	\begin{enumerate}[label=(\Alph*)]
+		\item \textbf{Game Modes, Game States \& Player State} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/GameMode/index.html}
+		\item \textbf{Actor \& Actor Components} - \url{https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/}
+		\item \textbf{Pawn \& Character} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/}
+		\item \textbf{Controllers} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/}
+	\end{enumerate}		
+\end{enumerate}
+
+\section*{Additional Guidance}
+
+The goal of this worksheet is to get you up to speed on the Unreal Engine, most of the work carried out here will be to edit existing objects and blueprints.
+You might find it difficult to find some of the variables for \textbf{A} \& \textbf{B}, this is contained in the \textbf{projectile} component
+of \textbf{First Person Projectile Actor}
+
+If you are struggling with Unreal Editor you should watch the following videos in additional resources.
+
+\section*{Additional Resources}
+
+\begin{itemize}
+    \item Introduction to Unreal Engine \url{https://www.pluralsight.com/courses/introduction-unreal-engine-4-1609}
+    \item Unreal Quickstart Volume 1 \url{https://www.pluralsight.com/courses/quick-start-unreal-engine-4-1-1732}
+    \item Unreal Quickstart Volume 2 \url{https://www.pluralsight.com/courses/quick-start-unreal-engine-4-2-1736}
+     \end{itemize}
+
+\end{document}
