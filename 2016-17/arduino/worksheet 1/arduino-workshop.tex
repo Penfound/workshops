@@ -22,67 +22,48 @@ We took a lot of opportunity to design and explore, knowing that a lot of it wou
 \end{marginquote}
 
 \marginpicture{flavour_pic}{
-    \emph{Unreal Engine} Blueprints
+    \emph{Arduino Uno} 
 }
 
 \section*{Introduction}
-The goals of this series of workshops is to obtain a good working knowledge of Visual Scripting system in Unreal which is called Blueprints. This will enable you to not only create simple systems in a game (e.g. Triggers) but create full games.
+The goals of this series of workshops is to obtain a good working knowledge of the Arduino platform. This will enable you to break away from traditional forms of hardware used to interact with your games and instead create more playful and tangible experiences for your users to enjoy.
 
-Blueprints is the Visual Scripting language which is shipped inside Unreal Engine 4. This language is node based, where functions and variables can be represented as nodes on the graph and the relationship between these are defined by connections. These connections also allow you to easily see the flow of data through your code.
+Arduino is not just a micro-controller. It is an entire open source community and ecosystem of hardware and software solutions that are designed from the ground up to be easy to learn. There are a variety of different Arduino boards and shields that will be useful no matter where your ideas take you, from wearables to motion tracking, smart rooms to retro interface. 
 
 \section*{Objectives}
 \begin{enumerate}[label=(\Alph*)]
-	\item \textbf{Understand} the architecture of the Unreal Engine
-	\item \textbf{Understand} the syntax of the Blueprints visual scripting system
-	\item \textbf{Apply} your knowledge of the Unreal Engine to modify existing systems
-	\item \textbf{Implement} changes to existing Blueprints to add functionality
+	\item \textbf{Identify} the parts of the Arduino and their purpose 
+	\item \textbf{Write} sketches and upload them to the Arduino board
+	\item \textbf{Apply} the basics to create more complex relationships between sensors and actuators
+	\item \textbf{Implement} a basic interface that communicates via the USB with Unreal Engine.
 \end{enumerate}
 
 \section*{Worksheet Setup}
 
-In order to complete this workshop we are going to modify the Blueprints FPS Template. This will provide us with some base functionality including
-
-\begin{itemize}
-	\item Basic blocked out environment
-	\item First Person Camera Controls
-	\item Weapon with projectiles
-\end{itemize}
-
-We will then build on this template in the workshops to develop a more fully featured FPS.
+In order to complete this worksheet you can either use the Arduino and hardware provided or simulate the tasks using the Arduino emulator at Circuits.io. The core tasks for this worksheet are:
 
 \section*{Worksheet Tasks}
+\begin{itemize}
+	\item Create a basic sketch that uses a switch to control an LED
+	\item Exchange the switch for a potentiometer and use a conditional statement to decide whether the LED should be turned off or not.
+	\item Create a ladder of LEDs that act as a visualiser for the readings from a potentiometer.
+	\item Write a sketch that sends the values from the potentiometer to the serial port to be received by the computer
+	\item Use the values from the serial to change the intensity of a light within an Unreal or Unity game. 
+\end{itemize}
 
-\begin{enumerate}
-	\item Split into Pairs (or Mobs), ideally with someone who is familiar with Unreal. Create a Blueprints FPS Game in Unreal and carry out the following tasks
-		\begin{enumerate}[label=(\Alph*)]
-		\item \textbf{Stop} the bullet falling due to gravity
-		\item \textbf{Increase} the initial speed of the bullet
-		\item \textbf{Add} a variable to the projectile blueprint to replace 100 which multiplies the velocity, you should make sure that this variable is editable
-		\item \textbf{Destroy} the bullet regardless of what object is hit
-		\end{enumerate}
-	\item Split into groups of 5 and each group member research the following and then report back to the team with your findings
-	\begin{enumerate}[label=(\Alph*)]
-		\item \textbf{Game Modes, Game States \& Player State} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/GameMode/index.html}
-		\item \textbf{Actor \& Actor Components} - \url{https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Actors/}
-		\item \textbf{Pawn \& Character} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Pawn/}
-		\item \textbf{Controllers} - \url{https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Controller/}
-	\end{enumerate}		
-\end{enumerate}
 
 \section*{Additional Guidance}
 
-The goal of this worksheet is to get you up to speed on the Unreal Engine, most of the work carried out here will be to edit existing objects and blueprints.
-You might find it difficult to find some of the variables for \textbf{A} \& \textbf{B}, this is contained in the \textbf{projectile} component
-of \textbf{First Person Projectile Actor}
+The goal of this worksheet is to get you up to speed with the Arduino platform, most of the work carried out here will be will be fairly rudimentary and you will be expected to progress quickly and apply these tasks to your hardware interface design
 
-If you are struggling with Unreal Editor you should watch the following videos in additional resources.
+If you are struggling with the Arduino tasks then you may find the resources listed below useful
 
 \section*{Additional Resources}
 
 \begin{itemize}
-    \item Introduction to Unreal Engine \url{https://www.pluralsight.com/courses/introduction-unreal-engine-4-1609}
-    \item Unreal Quickstart Volume 1 \url{https://www.pluralsight.com/courses/quick-start-unreal-engine-4-1-1732}
-    \item Unreal Quickstart Volume 2 \url{https://www.pluralsight.com/courses/quick-start-unreal-engine-4-2-1736}
-     \end{itemize}
+    \item Arduino \url{http://arduino.cc/}
+    \item Adafruit tutorial \url{https://learn.adafruit.com/category/learn-arduino}
+    \item Arduino video series \url{https://www.youtube.com/watch?v=fCxzA9_kg6s}
+\end{itemize}
 
 \end{document}
